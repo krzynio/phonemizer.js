@@ -1,7 +1,13 @@
 import commonjs from "@rollup/plugin-commonjs";
 import terser from "@rollup/plugin-terser";
 
-const plugins = [commonjs(), terser()];
+const plugins = [
+  commonjs(),
+  terser({
+    // Avoid worker thread flakiness on large bundles.
+    maxWorkers: 1,
+  }),
+];
 
 const OUTPUT_CONFIGS = [
   {
