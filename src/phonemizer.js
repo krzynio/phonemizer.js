@@ -10,7 +10,7 @@ const workerPromise = new Promise((resolve) => {
 
 const SUPPORTED_LANGUAGES = [
   "en", // English
-  "pl".
+  "pl",
 ];
 
 const initCache = workerPromise.then((worker) => {
