@@ -1,6 +1,6 @@
 # Phonemizer.js
 
-Simple text to phones converter using eSpeak NG.
+Simple text to phones converter using eSpeak NG with Polish support added.
 
 ## Basic usage
 
